@@ -9,7 +9,7 @@ const PORT = 5000;
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 let apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
+apiKey.apiKey = process.env.BREVO_API_KEY;
 
 // Enable CORS for frontend requests
 app.use(cors());
